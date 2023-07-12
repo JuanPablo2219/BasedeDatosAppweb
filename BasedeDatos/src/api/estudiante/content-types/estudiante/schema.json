@@ -4,7 +4,8 @@
   "info": {
     "singularName": "estudiante",
     "pluralName": "estudiantes",
-    "displayName": "Estudiante"
+    "displayName": "Estudiante",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,6 +13,23 @@
   "pluginOptions": {},
   "attributes": {
     "Nombre": {
+      "type": "string",
+      "required": true
+    },
+    "Apellido": {
+      "type": "string",
+      "required": true
+    },
+    "Genero": {
+      "type": "string"
+    },
+    "Direccion": {
+      "type": "string"
+    },
+    "Telefono": {
+      "type": "string"
+    },
+    "Ciclo": {
       "type": "string",
       "required": true
     }
