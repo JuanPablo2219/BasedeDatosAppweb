@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "preguntas",
+  "info": {
+    "singularName": "pregunta",
+    "pluralName": "preguntas",
+    "displayName": "Preguntas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "descripcion": {
+      "type": "string",
+      "required": true
+    },
+    "pregunta_id": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::opcione.opcione",
+      "mappedBy": "id_pregunta"
+    }
+  }
+}

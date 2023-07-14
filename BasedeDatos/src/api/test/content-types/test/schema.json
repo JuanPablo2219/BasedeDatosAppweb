@@ -4,16 +4,31 @@
   "info": {
     "singularName": "test",
     "pluralName": "tests",
-    "displayName": "Test"
+    "displayName": "test",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Descripcion": {
-      "type": "string",
-      "required": true
+    "fecha": {
+      "type": "date"
+    },
+    "points": {
+      "type": "integer"
+    },
+    "test_options": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::test-option.test-option",
+      "mappedBy": "id_test"
+    },
+    "student_id": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student",
+      "inversedBy": "id_tests"
     }
   }
 }

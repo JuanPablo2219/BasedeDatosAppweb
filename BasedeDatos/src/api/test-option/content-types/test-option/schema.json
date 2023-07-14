@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_options",
+  "info": {
+    "singularName": "test-option",
+    "pluralName": "test-options",
+    "displayName": "test_options"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "opciones_id": {
+      "type": "uid"
+    },
+    "test_id": {
+      "type": "uid"
+    },
+    "points": {
+      "type": "integer"
+    },
+    "id_test": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::test.test",
+      "inversedBy": "test_options"
+    },
+    "opcione_id": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::opcione.opcione",
+      "inversedBy": "test_options"
+    }
+  }
+}

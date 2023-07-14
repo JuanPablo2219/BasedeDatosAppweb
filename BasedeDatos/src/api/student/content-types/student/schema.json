@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "student",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom_Est": {
+      "type": "string",
+      "required": true
+    },
+    "ape_Est": {
+      "type": "string",
+      "required": true
+    },
+    "gen_Est": {
+      "type": "string"
+    },
+    "id_test": {
+      "type": "uid"
+    },
+    "id_tests": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::test.test",
+      "mappedBy": "student_id"
+    }
+  }
+}

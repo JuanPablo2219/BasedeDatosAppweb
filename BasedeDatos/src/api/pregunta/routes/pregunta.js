@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * estudiante router
+ * pregunta router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::estudiante.estudiante');
+module.exports = createCoreRouter('api::pregunta.pregunta');
