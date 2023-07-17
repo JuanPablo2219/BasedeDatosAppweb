@@ -18,17 +18,17 @@
     "points": {
       "type": "integer"
     },
-    "test_options": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::test-option.test-option",
-      "mappedBy": "id_test"
-    },
     "student_id": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::student.student",
-      "inversedBy": "id_tests"
+      "inversedBy": "ID"
+    },
+    "opciones_ID": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::opcione.opcione",
+      "inversedBy": "tes_id"
     }
   }
 }

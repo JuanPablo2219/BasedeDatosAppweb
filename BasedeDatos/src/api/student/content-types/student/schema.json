@@ -23,10 +23,7 @@
     "gen_Est": {
       "type": "string"
     },
-    "id_test": {
-      "type": "uid"
-    },
-    "id_tests": {
+    "ID": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::test.test",

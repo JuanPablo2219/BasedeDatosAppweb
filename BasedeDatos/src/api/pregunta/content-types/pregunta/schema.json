@@ -16,7 +16,7 @@
       "type": "string",
       "required": true
     },
-    "pregunta_id": {
+    "ID": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::opcione.opcione",

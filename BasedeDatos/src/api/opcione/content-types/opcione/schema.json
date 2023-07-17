@@ -20,17 +20,17 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::pregunta.pregunta",
-      "inversedBy": "pregunta_id"
-    },
-    "test_options": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::test-option.test-option",
-      "mappedBy": "opcione_id"
+      "inversedBy": "ID"
     },
     "descripcion": {
       "type": "string",
       "required": true
+    },
+    "tes_id": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::test.test",
+      "mappedBy": "opciones_ID"
     }
   }
 }
