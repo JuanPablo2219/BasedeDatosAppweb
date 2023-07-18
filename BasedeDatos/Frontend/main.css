@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+/* AQUI CSS DE LA PAGINA PRINCIPAL */
+
+.image10 {
+  display: flex;
+  justify-content: center;
+}
+
+
+.image10 img {
+  width:200px;
+  height: 150px;
+}
+
+
+.cuadro1 {
+  background-image: url(./img/neven-krcmarek-50HS3AzJsvQ-unsplash.jpg);
+  background-size: cover;
+}
+
+.cuadro1 button {
+  width: 160px;
+  height: 50px;
+  background-color: #0c99ff;
+  color:#000;
+  font-size: 40px;
+  margin-left: 100px;
+  margin-top: 60px;
+  border-radius: 30px;
+  font-size: 25px;
+  border: #0c99ff solid;
+}
+
+.cuadro1 button:hover {
+  background: #fff;
+  color: #0c99ff;
+  cursor: pointer;
+  border: none;
+}
+
+.cuadro1 h1 {
+  padding-top: 60px;
+  text-align:center;
+}
+
+.cuadro1 h2 {
+  margin-top: 20px;
+  text-align: center;  
+}
+
+.cuadro1 {
+  margin: 10px 10px 10px 10px;
+  height: 300px;  
+  border-radius: 20px;
+}
+
+.cuadro2 {
+  background-image: url(./img/ryan-gagnon--pGEFxRYY3E-unsplash.jpg);
+  background-size: cover;
+  place-items: center;
+  border-radius: 20px;
+  height: 200px;
+  margin: 10px 10px 10px 10px;
+}
+
+.cuadro2 p {
+  color:#fff;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.cuadro2 h2 {
+  color:#fff;
+  font-size: 40px;
+  padding-top: 1px;
+  padding-left: 20px;
+}
+
+.cuadro2 button {
+  width: 160px;
+  height: 50px;
+  background-color: #0c99ff;
+  color:#000;
+  font-size: 40px;
+  margin-left: 20px;
+  margin-top: 30px;
+  border-radius: 30px;
+  font-size: 25px;
+  border: #0c99ff solid;
+}
+
+.cuadro2 button:hover {
+  background: #fff;
+  color: #0c99ff;
+  cursor: pointer;
+  border: none;
+}
+
+.cuadro3 {
+  background-image: url(./img/sydney-sims-5_n3X6EfRNc-unsplash.jpg);
+  opacity: 1;
+  background-size: cover;
+  place-items: center;
+  border-radius: 20px;
+  height: 200px;
+  margin: 10px 10px 10px 10px;
+}
+
+.cuadro3 p {
+  color:#fff;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.cuadro3 h2 {
+  color:#fff;
+  font-size: 40px;
+  padding-top: 1px;
+  padding-left: 20px;
+}
+
+.cuadro3 button {
+  width: 160px;
+  height: 50px;
+  background-color: #0c99ff;
+  color:#000;
+  font-size: 40px;
+  margin-left: 20px;
+  margin-top: 30px;
+  border-radius: 30px;
+  font-size: 25px;
+  border: #0c99ff solid;
+}
+
+.cuadro3 button:hover {
+  background: #fff;
+  color: #0c99ff;
+  cursor: pointer;
+  border: none;
+}
+
+.cuadro4 {
+  background-image: url(./img/mitchel-lensink-Ismnr6WSHCU-unsplash.jpg);
+  opacity: 1;
+  background-size: cover;
+  place-items: center;
+  border-radius: 20px;
+  height: 200px;
+  margin: 10px 10px 10px 10px;
+}
+
+.cuadro4 p {
+  color:#fff;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.cuadro4 h2 {
+  color:#fff;
+  font-size: 40px;
+  padding-top: 1px;
+  padding-left: 20px;
+}
+
+.cuadro4 button {
+  width: 160px;
+  height: 50px;
+  background-color: #0c99ff;
+  color:#000;
+  font-size: 40px;
+  margin-left: 20px;
+  margin-top: 30px;
+  border-radius: 30px;
+  font-size: 25px;
+  border: #0c99ff solid;
+}
+
+.cuadro4 button:hover {
+  background: #fff;
+  color: #0c99ff;
+  cursor: pointer;
+  border: none;
+}
+
+
