@@ -1,25 +1,30 @@
-document.addEventListener("DOMContentLoaded", async () => {
-    const APIURL = 'http://localhost:1337/';
+const APIURL = 'http://localhost:1337/api';
 
-
+async function fetchData(endpion) {
     try {
-        const RESPONSE = await fetch(`${APIURL}/Preguntas`);
+        const RESPONSE = await fetch(`${APIURL}/${endpion}`);
         const DATA = await RESPONSE.json();
-        console.log(DATA);
+        return DATA;
 
     } catch (error) {
-        console.log('Error al obtener datos');
+        console.log('Error fetching data:', error);
     }
-});
+}
 
 
-const QUESTION =  [];
 
-const  APPELEMENT = document.getElementById('seccion-one');
+function displayData(DATA) {
+    let a = document.createElement('div');
 
-QUESTION.forEach(item => {
-    const LIST = document.createElement('li');
-    LIST.textContent = item.descibcion;
+    const DATA_CONTAINER = document.getElementById('seccion-one');
+    DATA_CONTAINER.innerHTML = JSON.stringify(DATA, null, 2);
+    console.log(DATA.data[0].attributes.descripcion)
 
-    APPELEMENT.appendChild(LIST)
-})
+    DATA_CONTAINER.appendChild(a);
+}
+
+fetchData('preguntas')
+    .then(DATA => {
+        console.log("datos obtenido:", DATA);
+        displayData(DATA);
+    });
