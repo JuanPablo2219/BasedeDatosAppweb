@@ -22,12 +22,6 @@
     },
     "gen_Est": {
       "type": "string"
-    },
-    "ID": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::test.test",
-      "mappedBy": "student_id"
     }
   }
 }

@@ -8,14 +8,14 @@
 </head>
 <body>
     <div class="image10">
-        <img src="img/imagen1.jpg" alt="">
+        <img src="img/imagen1-removebg-preview (1).png" alt="">
     </div>
 
     <div class="cuadro1">
         <h1>Buenos Días</h1>
         <h2>Tu Test Comienza aquí</h2>
 
-        <a href=""> <button>Empezar</button> </a>
+        <a href="#"> <button onclick="submitResults()">Ver Resultados</button> </a>
     </div>
 
     <br>
@@ -28,7 +28,7 @@
         <p>Sección 1</p>
         <h2>Cognitivos</h2>
 
-        <a href="seccion1.html"> <button>Empezar</button> </a>
+        <a  href="seccion1.html" > <button class="to-next-page" data-questions="1">Empezar</button> </a>
     </div>
 
     <br>
@@ -37,7 +37,7 @@
         <p>Sección 2</p>
         <h2>Emocionales</h2>
 
-        <a href="http://"> <button>Empezar</button> </a>
+        <a  href="seccion1.html" > <button class="to-next-page" data-questions="2">Empezar</button> </a>
     </div>
     
     <br>
@@ -46,8 +46,9 @@
         <p>Sección 3</p>
         <h2>Fisicas</h2>
 
-        <a href="http://"> <button>Empezar</button> </a>
+        <a href="seccion1.html"> <button class="to-next-page" data-questions="3">Empezar</button> </a>
     </div>
+    <script src="getNumberOfQuestions.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

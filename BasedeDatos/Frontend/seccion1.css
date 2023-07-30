@@ -3,11 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-body {
-    display: grid;
-    background-color: #0c99ff;
-}
 h1{
     text-align: center;
     margin-top: 15px;
 }
+
+
+

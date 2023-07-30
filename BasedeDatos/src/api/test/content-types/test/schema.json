@@ -12,23 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "fecha": {
-      "type": "date"
-    },
     "points": {
       "type": "integer"
     },
-    "student_id": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::student.student",
-      "inversedBy": "ID"
-    },
-    "opciones_ID": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::opcione.opcione",
-      "inversedBy": "tes_id"
+    "name": {
+      "type": "string",
+      "required": false
     }
   }
 }
