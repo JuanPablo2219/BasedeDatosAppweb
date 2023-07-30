@@ -23,8 +23,7 @@ html {
     left: 0;
     right: 0;
     z-index: 10000;
-    background-color: #0c99ff;
-    
+    background-color: #0c99ff;    
 }
 
 .header #logo img {
@@ -32,20 +31,26 @@ html {
 }
 
 .navbar a {
-    color: white;
+    color: black;
     font-size: 1.5rem;
     margin-right: 1.5rem;
     position: relative;
     padding: 1rem;
+    background: #0c99ff;
+    border-radius: 100px;
 }
 
 .navbar a:hover {
-    color: #000;
+    background: #fff;
+    color: #0c99ff;
 }
+
 
 nav {
     margin-left: 50rem;
 }
+
+/*One seccion*/
 
 .main-home {
     padding: 1rem 7%;
@@ -81,18 +86,22 @@ nav {
 .inner-left-content p {
     font-size: 1.5rem;
     margin-bottom: 25px;
+    text-align: justify;
 }
 
 .inner-left-content a {
-    padding: 1.5rem 3rem;
-    background: var(--headerclr);
-    color: white;
+    padding: 1.4rem 3rem;
+    background:#0c99ff;
+    color: #fff;
     font-size: 1.5rem;
+    border: #fff 1px solid;
+    border-radius: 30px;
 }
 
 .inner-left-content a:hover {
-    border-radius: 15px;
-    background: var(--mainclr);
+    border-radius: 100px;
+    background: #fff;
+    color: #0c99ff;
 }
 
 .main-home .right-home {
@@ -104,12 +113,12 @@ nav {
 }
 
 .main-home .right-home img {
-    width: 80%;
+    width: 110%;
     margin-top: 50px;
 }
 
 .home {
-    background: url(img/anthony-tran-vXymirxr5ac-unsplash__1_-removebg-preview.png);
+    background-color: #0c99ff;
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -117,12 +126,20 @@ nav {
     background-position: right;
 }
 
+/*Seccion one*/
+
 .who {
+    width: 100%;
+    height: 100vh;
     padding: 2rem 7%;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-negro-degradado-elementos-realistas_52683-76744.jpg?w=740&t=st=1690667411~exp=1690668011~hmac=628a061435bd5e36635a09a4ad1ec1f7a7d6709c585785331d69ca1031ad52c2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
 }
 
 .who h1 {
-    color: var(--headerclr);
+    color: #fff;
     font-size: 40px;
     text-align: center;
 }
@@ -147,14 +164,15 @@ nav {
 }
 
 .inner-who-content h2 {
-    color: var(--headerclr);
     font-size: 40px;
 }
 
 .inner-who-content p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin: 1rem 0;
     margin-bottom: 25px;
+    color: #fff;
+    text-align: justify;
 }
 
 .inner-who-content a {
@@ -166,11 +184,15 @@ nav {
 
 .inner-who-content a:hover {
     border-radius: 15px;
-    background: var(--mainclr);
 }
+
+/*second seccion*/
 
 .we-offer {
     padding: 2rem 7%;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-monocromatico-blanco-estilo-papel_52683-66443.jpg?w=740&t=st=1690664636~exp=1690665236~hmac=8eb0efa99b6a350f260a4c54cca339df140367d1bd791d8c5bdeac44c285aa37);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .we-offer h1 {
@@ -196,6 +218,9 @@ nav {
 
 .inner-offer:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #0c99ff;
+    color: #fff;
+    border-radius: 30px;
 }
 
 .inner-offer img {
@@ -205,6 +230,7 @@ nav {
 .inner-offer h2 {
     font-size: 25px;
     margin: 1rem 0;
+    color: #000;
 }
 
 .inner-offer p {
@@ -214,22 +240,20 @@ nav {
 
 .inner-offer a {
     padding: 1.5rem 3rem;
-    background: var(--mainclr);
     border-radius: 15px;
     font-size: 1.5rem;
-    color: white;
+    color: #000;
     transition: .5s;
 }
 
-.inner-offer a:hover {
-    background: var(--headerclr);
-    border-radius: 0;
-}
+
+/*three seccion*/
 
 .our-pricing {
     padding: 6rem 7%;
-    background: #a69efaa4;
-
+    background-image: url(img/mitchel-lensink-Ismnr6WSHCU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .our-pricing h1 {
@@ -257,6 +281,8 @@ nav {
 
 .inner-price:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #0c99ff;
+    color: #fff;
 }
 
 .inner-price h2 {
@@ -280,36 +306,27 @@ nav {
 }
 
 .inner-price a:hover {
-    background: var(--headerclr);
     border-radius: 15px;
 }
 
 .header.active {
-    background: var(--headerclr);
     transition: all .9s ease-in-out;
 }
-
-
-
-
-
-
 
 .contact p {
     text-align: center;
     font-size: 2rem;
     padding-top: 100px;
+    color: #000;
+}
+.contact p:hover {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 100px;
+    color: #0c99ff;
 }
 
-
-
-
-
-
-
-
-
-
+/*Aqui los datos responsives*/
 
 @media (max-width:767px) {
     html {
@@ -323,30 +340,25 @@ nav {
         right: 0;
         width: 30rem;
         height: 100vh;
-        background: var(--headerclr);
+        background: #0c99ff;
     }
 
     .navbar a {
         display: block;
         margin: 1rem;
         padding: 1rem;
-        color: white;
+        color: #000;
         font-size: 1.5rem;
-    }
-
-    .icons div {
-
-        display: initial;
     }
 
     .main-home .right-home {
         width: 100%;
-        margin-top: 0;
+        margin-top: 10;
     }
 
     .main-home .right-home img {
-        width: 100%;
-        margin-top: -100px;
+        width: 150%;
+        margin-top: -300px;
     }
 
     .main-home .left-home {
