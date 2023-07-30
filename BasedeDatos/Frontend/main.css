@@ -19,12 +19,59 @@
   height: 150px;
 }
 
+.cuadro1 {
+  margin: 10px 10px 10px 10px;
+  height: 550px;  
+  border-radius: 20px;
+}
 
 .cuadro1 {
   background-image: url(./img/neven-krcmarek-50HS3AzJsvQ-unsplash.jpg);
   background-size: cover;
   display: grid;
   place-items:center ;
+}
+
+/*Estilos del formulario de Datos*/
+
+.form-register{
+  width: 400px;
+  background: transparent;
+  padding: 30px;
+  margin: auto;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.form-register h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.controls{
+  width: 100%;
+  background: #fffc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  border: 1px solid #0c99ff;
+}
+
+.form-register .buttons {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #0c99ff;
+  font-size: 20px;
+}
+
+
+.form-register .buttons:hover {
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  background: #0c99ff;
+  border-radius: 10px;
 }
 
 .cuadro1 button {
@@ -47,23 +94,15 @@
 }
 
 .cuadro1 h1 {
-  padding-top: 60px;
+  text-align:center;
+}
+.cuadro1 h2 {
+  color: #fff;
   text-align:center;
 }
 
-.cuadro1 h2 {
-  margin-top: 20px;
-  text-align: center;  
-}
-
-.cuadro1 {
-  margin: 10px 10px 10px 10px;
-  height: 400px;  
-  border-radius: 20px;
-}
-
 .cuadro2 {
-  background-image: url(./img/ryan-gagnon--pGEFxRYY3E-unsplash.jpg);
+  background-image: url(img/sydney-sims-5_n3X6EfRNc-unsplash.jpg);
   background-size: cover;
   place-items: center;
   border-radius: 20px;
@@ -106,7 +145,7 @@
 }
 
 .cuadro3 {
-  background-image: url(./img/sydney-sims-5_n3X6EfRNc-unsplash.jpg);
+  background-image: url(img/priscilla-du-preez-Wxhsx3X10OA-unsplash.jpg);
   opacity: 1;
   background-size: cover;
   place-items: center;
@@ -190,6 +229,34 @@
   background: #fff;
   color: #0c99ff;
   cursor: pointer;
+  border: none;
+}
+
+.find{
+  display: grid;
+  place-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.find button {
+  width: 210px;
+  height: 55px;
+  color:#000;
+  margin-top: 5px;
+  border-radius: 30px;
+  font-size: 20px;
+  border: 1px solid #0c99ff;
+} 
+.find button:hover{
+  width: 210px;
+  height: 55px;
+  background-color: #0c99ff;  
+  color:#fff;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 30px;
+  font-size: 21px;
+  transition: 0.5s;
   border: none;
 }
 

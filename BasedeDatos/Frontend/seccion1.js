@@ -17,17 +17,17 @@ function displayQuestion(DATA) {
         label.innerHTML = question.attributes.descripcion;
 
         if (index < 7 && questions == "1") {
-            title.innerHTML = "BIENVENIDOS A LA SECCION DE COGNITIVOS";
+            title.innerHTML = "¡ AQUI ESTAN LAS PREGUNTAS DE LA SECCIÓN EMOCIONALES !";
             createForm(question, label, optionFragment, labelFragment);
             form.appendChild(optionFragment);
         }
         if (index >= 7 && index < 14 && questions == "2") {
-            title.innerHTML = "Emocionales";
+            title.innerHTML = "AQUI ESTAN LAS PREGUNTAS DE LA SECCIÓN COGNITIVAS";
             createForm(question, label, optionFragment, labelFragment);
             form.appendChild(optionFragment);
         }
         if (index >= 14 && index < 21 && questions == "3") {
-            title.innerHTML = "Físicas";
+            title.innerHTML = "AQUI ESTAN LAS PREGUNTAS DE LA SECCIÓN FÍSICAS";
             createForm(question, label, optionFragment, labelFragment);
             form.appendChild(optionFragment);
         }
