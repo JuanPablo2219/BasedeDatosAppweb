@@ -2,23 +2,81 @@ let myHeaders = new Headers({
     'Content-type': 'application/json',
 })
 
+let registerSection = document.querySelector('.cuadro1');
+let allSections = document.querySelector('.all-sections');
+let button1 = document.querySelector('.button1');
+let button2 = document.querySelector('.button2');
+let button3 = document.querySelector('.button3');
+let button4 = document.querySelector('.button4');
+
+let completedForm = sessionStorage.getItem('completedForm');
+
+let inputName = document.querySelector('#Name');
+let inputLastName = document.querySelector('#SecondName');
+let inputDate = document.querySelector('#date');
+let inputGenre = document.querySelector('#Genero');
+let inputcareer = document.querySelector('#Carrera');
+let inputCycle = document.querySelector('#Number');
+
 function submitResults(){
-    let totalPoints = sessionStorage.getItem('totalAdd');
-    fetch('http://localhost:1337/api/tests', {
-        method:'POST',
-        headers: myHeaders,
-        body: JSON.stringify({
-            "data": {
-                "name": "juan",
-                "points": totalPoints.toString()
-            }
-        })
-    }).then(res=>res.json()).then(res=> console.log(res));
+    if(sessionStorage.getItem('completeForms') === '3'){
+        registerSection.style.display = "block";
+        allSections.style.display = "none";
+        button1.textContent = "Enviar Resultados";
+        sessionStorage.setItem('completeForms', "valid");
+    }else
+    if(sessionStorage.getItem('completeForms') === 'valid'){
+        let totalPoints = sessionStorage.getItem('totalAdd');
+        fetch('http://localhost:1337/api/tests', {
+            method:'POST',
+            headers: myHeaders,
+            body: JSON.stringify({
+                "data": {
+                    "Nombres": inputName.value,
+                    "Apellidos": inputLastName.value,
+                    "Genero": inputGenre.value,
+                    "Carrera": inputcareer.value,
+                    "Fecha": inputDate.value,
+                    "Ciclo": inputCycle.value,
+                    "Puntos": totalPoints.toString()
+                }
+            })
+        }).then(res=>res.json()).then(res=> {
+            console.log(res);
+            sessionStorage.clear();
+            location.href = 'http://127.0.0.1:5500/BasedeDatos/Frontend/index.html'
+        });
+    }
+
 }
 
+if(!sessionStorage.getItem('completeForms')){
+    sessionStorage.setItem('completeForms', '0');
+}
+
+registerSection.style.display = "none";
+
+/* registerSection.style.display = "none"; */
 
 
 
+function hiddenButtons(){
+    if(completedForm === "1" || sessionStorage.getItem('displayButton2')){
+        button2.style.display = "none";
+        sessionStorage.setItem('displayButton2', "false");
+    }
+    if(completedForm === "2" || sessionStorage.getItem('displayButton3')){
+        button3.style.display = "none";
+        sessionStorage.setItem('displayButton3', "false");
+    }
+    if(completedForm === "3" || sessionStorage.getItem('displayButton4')){
+        button4.style.display = "none";
+        sessionStorage.setItem('displayButton4', "false");
+    }
+
+}
+hiddenButtons();
+console.log(button2);
 
 
 

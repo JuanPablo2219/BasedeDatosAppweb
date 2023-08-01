@@ -12,12 +12,27 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "points": {
+    "Puntos": {
       "type": "integer"
     },
-    "name": {
+    "Nombres": {
       "type": "string",
       "required": false
+    },
+    "Apellidos": {
+      "type": "string"
+    },
+    "Carrera": {
+      "type": "string"
+    },
+    "Fecha": {
+      "type": "date"
+    },
+    "Genero": {
+      "type": "string"
+    },
+    "Ciclo": {
+      "type": "string"
     }
   }
 }

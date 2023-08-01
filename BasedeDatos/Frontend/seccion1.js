@@ -16,7 +16,9 @@ function displayQuestion(DATA) {
         let label = document.createElement("label");
         label.innerHTML = question.attributes.descripcion;
 
+
         if (index < 7 && questions == "1") {
+            console.log(question.attributes.descripcion);
             title.innerHTML = "¡ AQUI ESTAN LAS PREGUNTAS DE LA SECCIÓN EMOCIONALES !";
             createForm(question, label, optionFragment, labelFragment);
             form.appendChild(optionFragment);
@@ -77,6 +79,8 @@ function fecthOptions() {
 }
 
 function submitForm() {
+    let completeForms = Number(sessionStorage.getItem('completeForms'));
+
     const formData = new FormData(form);
     let totalAdd = 0;
 
@@ -89,8 +93,11 @@ function submitForm() {
     })
     totalAdd += Number(sessionStorage.getItem('totalAdd'));
     sessionStorage.setItem('totalAdd', totalAdd.toString());
+    completeForms = Number(completeForms) + 1;
+    console.log(completeForms);
+    sessionStorage.setItem('completeForms', completeForms.toString());
     console.log(totalAdd);
-    submitButton.disabled = true;
+    sessionStorage.setItem('completedForm', questions);
 
     window.location.href = http;
 }

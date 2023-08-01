@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>INICIO</title>
+    <title>Secciones</title>
 </head>
 <body>
     <div class="image10">
@@ -14,17 +14,18 @@
     <div class="cuadro1">
         <h1>¡ BIENVENIDOS !</h1>
 
-<!-- 
-    <div id="form-register" class="form-register">
+    <div id="form-register" class="form-register" class="form">
         <h2>Ingrese sus Datos</h2>
         <input class="controls" type="text" name="name" id="Name" placeholder="Ingrese sus nombre">
         <input class="controls" type="text" name="SecondName" id="SecondName" placeholder="Ingrese sus Apellidos">
         <input class="controls" type="date" name="date" id="date">
-        <input class="controls" type="text" name="Genero" id="Genero" placeholder="Ingrese su Genero">
+        <select class="controls" name="genre" id="Genero">
+            <option value="masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+        </select>
         <input class="controls" type="text" name="Carrera" id="Carrera" placeholder="Ingrese su Carrera">
         <input class="controls" type="number" name="Number" id="Number" placeholder="Ingrese el Ciclo">
-        <input class="buttons" type="submit" name="submit" id="submit" value="Enviar Datos">
-    </div> -->
+    </div>
 
     </div>
 
@@ -33,34 +34,35 @@
     <br>
     <br>
     <br>
-
-    <div id="seccion-one" class="cuadro2">
-        <p>Sección 1</p>
-        <h2>Emocionales</h2>
-
-        <a  href="seccion1.html" > <button class="to-next-page" data-questions="1">Empezar</button> </a>
-    </div>
-
-    <br>
-
-    <div class="cuadro3">
-        <p>Sección 2</p>
-        <h2>Cognitivas</h2>
-
-        <a  href="seccion1.html" > <button class="to-next-page" data-questions="2">Empezar</button> </a>
-    </div>
+    <div class="all-sections">
+        <div id="seccion-one" class="cuadro2">
+            <p>Sección 1</p>
+            <h2>Emocionales</h2>
     
-    <br>
-
-    <div class="cuadro4">
-        <p>Sección 3</p>
-        <h2>Físicas</h2>
-
-        <a href="seccion1.html"> <button class="to-next-page" data-questions="3">Empezar</button> </a>
+            <a  href="seccion1.html" > <button class="to-next-page button2" data-questions="1">Empezar</button> </a>
+        </div>
+    
+        <br>
+    
+        <div class="cuadro3">
+            <p>Sección 2</p>
+            <h2>Cognitivas</h2>
+    
+            <a  href="seccion1.html" > <button class="to-next-page button3" data-questions="2">Empezar</button> </a>
+        </div>
+        
+        <br>
+    
+        <div class="cuadro4">
+            <p>Sección 3</p>
+            <h2>Físicas</h2>
+    
+            <a href="seccion1.html"> <button class="to-next-page button4" data-questions="3">Empezar</button> </a>
+        </div>
     </div>
 
     <div class="find">
-        <a href="#"> <button onclick="submitResults()">Enviar Resultados</button> </a>
+        <a href="#"> <button class="button1" onclick="submitResults()">Continuar</button> </a>
     </div>
 
 
