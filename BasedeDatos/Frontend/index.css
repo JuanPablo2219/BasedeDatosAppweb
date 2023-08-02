@@ -6,7 +6,7 @@
     text-transform: capitalize;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 html {
@@ -18,16 +18,27 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    background-image: url(img/neven-krcmarek-50HS3AzJsvQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10000;
-    background-color: #0c99ff;    
+    position: static;
+}
+
+.home {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    background-position: right;
 }
 
 .header #logo img {
-    width: 100px;
+    width: 80px;
 }
 
 .navbar a {
@@ -36,12 +47,11 @@ html {
     margin-right: 1.5rem;
     position: relative;
     padding: 1rem;
-    background: #0c99ff;
     border-radius: 100px;
 }
 
 .navbar a:hover {
-    background: #fff;
+    background: transparent ;
     color: #0c99ff;
 }
 
@@ -52,79 +62,30 @@ nav {
 
 /*One seccion*/
 
-.main-home {
-    padding: 1rem 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 .main-home .left-home {
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.inner-left-content h3 {
-    font-size: 40px;
-    color: black;
-    font-weight: lighter;
-    margin-bottom: 5px;
-}
-
-.inner-left-content h1 {
-    font-size: 40px;
-    color: black;
-    font-weight: bolder;
-    margin-bottom: 10px;
-}
-
-.inner-left-content p {
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-    text-align: justify;
-    color: #fff;
-}
-
-.inner-left-content a {
-    padding: 1.4rem 3rem;
-    background:#0c99ff;
-    color: #fff;
-    font-size: 1.5rem;
-    border: #fff 1px solid;
-    border-radius: 30px;
-}
-
-.inner-left-content a:hover {
-    border-radius: 100px;
-    background: #fff;
-    color: #0c99ff;
-}
-
-.main-home .right-home {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.main-home .right-home img {
-    width: 110%;
-    margin-top: 50px;
-}
-
-.home {
-    background-color: #0c99ff;
-    background-repeat: no-repeat;
-    background-size: contain;
     width: 100%;
     height: 100vh;
-    background-position: right;
+    padding: 1rem 7%;
+    padding-bottom: 20%;
+    display: flex;
+    background-image: url(img/priscilla-du-preez-Wxhsx3X10OA-unsplash.jpg);
+    background-size: cover;
+}
+
+.main-home .left-home h1{
+    font-size: 50px;
+    padding-top: 140px;
+}
+
+.main-home .left-home p{
+    display: flex;
+    font-size: 25px;
+    justify-content: end;
+    margin-left: 50%;
+    text-align: justify;
 }
 
 /*Seccion one*/
@@ -367,13 +328,19 @@ nav {
         margin-top: -100px;
     }
 
+    .main-home .left-home p{
+        color: white;
+    }
+
+    .main-home .left-home h1{
+        color: white;
+    }
+
     .home {
         background: none;
     }
 
-    .who {
-        margin-top: 200px;
-    }
+    
 
     .inner-who-content {
         margin-top: 20px;
