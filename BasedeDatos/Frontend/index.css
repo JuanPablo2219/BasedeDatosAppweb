@@ -53,6 +53,7 @@ html {
 .navbar a:hover {
     background: transparent ;
     color: #0c99ff;
+    filter: drop-shadow(10px 8px 10px  #0c99ff);
 }
 
 
@@ -85,7 +86,27 @@ nav {
     font-size: 25px;
     justify-content: end;
     margin-left: 50%;
+    margin-top: 10px;
     text-align: justify;
+}
+
+.main-home .left-home a{
+    display: grid;
+    place-items: center;
+    width: 180px;
+    height: 60px;
+    margin-top: 20px;
+    background-color: #325666;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    filter: drop-shadow(10px 8px 10px  #34576a);
+    color: #000;
+}
+
+.main-home .left-home a:hover{
+    background-color: #fff;
+    color: #0c99ff;
 }
 
 /*Seccion one*/
@@ -93,15 +114,15 @@ nav {
 .who {
     width: 100%;
     height: 100vh;
-    padding: 2rem 7%;
-    background-image: url(https://img.freepik.com/vector-gratis/fondo-negro-degradado-elementos-realistas_52683-76744.jpg?w=740&t=st=1690667411~exp=1690668011~hmac=628a061435bd5e36635a09a4ad1ec1f7a7d6709c585785331d69ca1031ad52c2);
+    padding: 1.5rem 7%;
+    background: #fff;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
 }
 
 .who h1 {
-    color: #fff;
+    color: #000;
     font-size: 40px;
     text-align: center;
 }
@@ -130,22 +151,57 @@ nav {
 }
 
 .inner-who-content p {
-    font-size: 1.6rem;
-    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1.3rem ;
     margin-bottom: 25px;
     color: #fff;
-    text-align: justify;
 }
 
-.inner-who-content a {
-    background: var(--headerclr);
-    padding: 1.5rem 3rem;
-    color: white;
-    font-size: 1.5rem;
-}
 
 .inner-who-content a:hover {
     border-radius: 15px;
+}
+
+.circle1,
+.circle2{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    filter: drop-shadow(10px 8px 6px #ededef);
+}
+
+.cir1{
+    width: 100%;
+    height: 100%;
+    background: #ededef;
+    margin: 10px;
+    padding: 1px;filter: drop-shadow(10px,10px);
+}
+.cir1:hover{
+    width: 100%;
+    height: 100%;
+    background: #ededef;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 1px;
+    filter: drop-shadow(5px 4px 6px  #0c99ff);
+}
+
+.cir1 p{
+    font-size: 22px;
+    color: #000;
+}
+
+
+.cir1:hover{
+    background: #0c99ff;
+    cursor: pointer;
+    color: #fff;
+}
+.cir1:hover p{
+    color: #fff;
+    
 }
 
 /*second seccion*/
