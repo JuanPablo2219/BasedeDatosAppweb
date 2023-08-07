@@ -384,11 +384,11 @@ nav {
 
     .main-home .left-home {
         width: 100%;
-        margin-top: -100px;
     }
 
     .main-home .left-home p{
         color: white;
+        
     }
 
     .main-home .left-home h1{
@@ -408,5 +408,28 @@ nav {
     .who h1 {
         margin-bottom: 15px;
     }
+
+    .who{
+        display: grid;
+        place-content: center;
+        grid-template-columns:
+        auto-fit,
+        minmax(150px, 1fr);
+        height: 100%;
+    }
+    .circle1{
+        display: grid;
+        place-items: center;
+        height: auto;
+    }
+
+
+    .inner-offer p{
+        font-size: 20px;
+    }
+    .inner-price p{
+        font-size: 20px;
+    }
+   
 
 }
