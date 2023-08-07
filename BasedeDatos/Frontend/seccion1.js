@@ -19,17 +19,17 @@ function displayQuestion(DATA) {
 
         if (index < 7 && questions == "1") {
             console.log(question.attributes.descripcion);
-            title.innerHTML = "¡ AQUI ESTAN LAS PREGUNTAS DE LA SECCIÓN EMOCIONALES !";
+            title.innerHTML = "¡ SECCIÓN EMOCIONALES !";
             createForm(question, label, optionFragment, labelFragment);
             form.appendChild(optionFragment);
         }
         if (index >= 7 && index < 14 && questions == "2") {
-            title.innerHTML = "AQUI ESTAN LAS PREGUNTAS DE LA SECCIÓN COGNITIVAS";
+            title.innerHTML = "¡ SECCIÓN COGNITIVAS !";
             createForm(question, label, optionFragment, labelFragment);
             form.appendChild(optionFragment);
         }
         if (index >= 14 && index < 21 && questions == "3") {
-            title.innerHTML = "AQUI ESTAN LAS PREGUNTAS DE LA SECCIÓN FÍSICAS";
+            title.innerHTML = "¡ SECCIÓN FÍSICAS !";
             createForm(question, label, optionFragment, labelFragment);
             form.appendChild(optionFragment);
         }

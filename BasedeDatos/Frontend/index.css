@@ -39,6 +39,9 @@ html {
 
 .header #logo img {
     width: 80px;
+    filter: drop-shadow(1px 1px 1px #fff);
+    transition: 5s;
+    transform: scale(1.1);
 }
 
 .navbar a {
@@ -115,7 +118,7 @@ nav {
     width: 100%;
     height: 100vh;
     padding: 1.5rem 7%;
-    background: #fff;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-monocromatico-blanco-estilo-papel_52683-66443.jpg?w=740&t=st=1690664636~exp=1690665236~hmac=8eb0efa99b6a350f260a4c54cca339df140367d1bd791d8c5bdeac44c285aa37);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
@@ -269,13 +272,13 @@ nav {
 
 .our-pricing {
     padding: 6rem 7%;
-    background-image: url(img/mitchel-lensink-Ismnr6WSHCU-unsplash.jpg);
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-monocromatico-blanco-estilo-papel_52683-66443.jpg?w=740&t=st=1690664636~exp=1690665236~hmac=8eb0efa99b6a350f260a4c54cca339df140367d1bd791d8c5bdeac44c285aa37);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .our-pricing h1 {
-    color: white;
+    color: #000;
     font-size: 40px;
     text-align: center;
     margin-bottom: 25px;

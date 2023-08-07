@@ -5,6 +5,9 @@
     font-family: 'Times New Roman', Times, serif;
   }
 
+  body{
+    background-color: #c8cccf;
+  }
 
 /* AQUI CSS DE LA PAGINA PRINCIPAL */
 
@@ -16,21 +19,30 @@
 
 .image10 img {
   width:200px;
-  height: 150px;
+  height: 140px;
+  filter: drop-shadow(1px 1px 1px #fff);
 }
+
+
+
+.image10 img:hover {
+  width:200px;
+  height: 140px;
+  transform: scale(1.1);
+  transition: 5s;
+  filter: drop-shadow(1px 1px 1px #0c99ff);
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
 
 .cuadro1 {
   margin: 10px 10px 10px 10px;
-  height: 550px;  
+  height: 259px;  
   border-radius: 20px;
+  transition: 3s;
 }
 
-.cuadro1 {
-  background-image: url(./img/neven-krcmarek-50HS3AzJsvQ-unsplash.jpg);
-  background-size: cover;
-  display: grid;
-  place-items:center ;
-}
 
 /*Estilos del formulario de Datos*/
 
@@ -40,7 +52,7 @@
   padding: 30px;
   margin: auto;
   border-radius: 10px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family:monospace;
 }
 
 .form-register h2 {
@@ -110,6 +122,10 @@
   margin: 10px 10px 10px 10px;
 }
 
+.cuadro2:hover{
+  animation: shake 0.7s;
+}
+
 .cuadro2 p {
   color:#fff;
   font-size: 20px;
@@ -154,6 +170,12 @@
   margin: 10px 10px 10px 10px;
 }
 
+.cuadro3:hover {
+  animation: shake 0.6s;
+}
+
+
+
 .cuadro3 p {
   color:#fff;
   font-size: 20px;
@@ -196,6 +218,10 @@
   border-radius: 20px;
   height: 220px;
   margin: 10px 10px 10px 10px;
+}
+
+.cuadro4:hover {
+  animation: shake 0.5s;
 }
 
 .cuadro4 p {
@@ -261,3 +287,14 @@
 }
 
 
+@keyframes shake{
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
