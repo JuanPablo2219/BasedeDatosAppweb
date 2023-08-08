@@ -8,3 +8,4 @@ toNextAllPages.forEach(toNextPage => {
         sessionStorage.setItem('questions', e.target.dataset.questions.toString());
     })
 })
+
